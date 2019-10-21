@@ -11,7 +11,7 @@
       :unique-opened="false"
       :collapse-transition="false"
     >
-      <sidebar-item :menu="getrouters"/>
+      <sidebar-item :menu="getrouters" />
     </el-menu>
   </div>
 </template>

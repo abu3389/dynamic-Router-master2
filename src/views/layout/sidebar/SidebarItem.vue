@@ -1,7 +1,7 @@
 <template>
   <div class="menu-wrapper">
     <template v-for="item in menu">
-      <!-- 最后一级菜单 -->
+      <!-- 此菜单下没有子菜单 -->
       <el-menu-item
         v-if="!item.children && !item.hidden"
         :key="item.path"

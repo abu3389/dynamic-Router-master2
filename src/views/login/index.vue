@@ -35,7 +35,8 @@
           type="primary"
           style="width:100%;"
           @click.native.prevent="handleLogin"
-        >Sign in</el-button>
+          >Sign in</el-button
+        >
       </el-form-item>
       <div>
         <span>username: admin</span>
@@ -100,6 +101,7 @@ export default {
             .dispatch("Login", this.loginForm)
             .then(data => {
               this.loading = false;
+              //登录成功，跳转到后台Home主页
               if (data) {
                 this.$router.push("/");
               }
@@ -121,4 +123,3 @@ div span + span {
   margin-left: 20px;
 }
 </style>
-
