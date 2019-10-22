@@ -25,7 +25,7 @@ export default {
         },
         goHome () {
             this.$router.push({
-                name: 'Home'
+                path: '/'
             });
         }
     }
