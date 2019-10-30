@@ -59,7 +59,7 @@ export default {
         }
         return {
             code: 90001,
-            message: "Account and password are incorrect."
+            message: "账户或密码错误."
         };
     },
     getInfo: res => {
@@ -74,7 +74,7 @@ export default {
         }
         return {
             code: 50008,
-            message: "Login failed, unable to get user details."
+            message: "登陆失败，无法获取用户信息"
         };
     },
     logout: () => {

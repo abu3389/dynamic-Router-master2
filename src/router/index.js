@@ -57,15 +57,14 @@ export const asyncRouterMap = [
                 name: "1-2",
                 component: () =>
                     import("@/views/userpower1/1-2"),
-                hidden: ['0'],//用户角色为0时，隐藏
-                meta: { title: "1-2", role: ['0', '1', '2'] }//role 有0，可以通过某页跳转到这个路由
+                hidden: ['0'],//不在菜单显示的角色
+                meta: { title: "1-2", role: ['0', '1', '2'] }//role 允许通过某页跳转到这个路由的角色
             },
             {
                 path: "1-3",
                 name: "1-3",
                 component: () =>
                     import("@/views/userpower1/1-3"),
-                meta: { title: "1-1", role: ['0'] },
                 hidden: true,//不在sidebar显示，由sidebar中的某路由跳转到这个页面,本例由1-2跳转，因此role与1-2同
                 meta: { title: "1-3", role: ['0', '1', '2'] }
             }

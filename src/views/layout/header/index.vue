@@ -34,11 +34,6 @@ export default {
     toggleSideBar() {
       this.$store.dispatch("ToggleSideBar");
     },
-    // logout() {
-    // this.$store.dispatch("LogOut").then(() => {
-    //   location.reload(); // 为了重新实例化vue-router对象 避免bug
-    // });
-    // },
     async logout() {
       await this.$store.dispatch("LogOut");
       this.$router.push(`/login`);
