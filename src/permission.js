@@ -20,7 +20,7 @@ router.beforeEach((to, from, next) => {
       //判断是否有用户角色权限信息，如果没有，先获取用户信息来获取用户角色信息，再根据角色权限动态生成路由
       if (store.getters.getroles.length === 0) {
         // 判断当前用户是否已拉取完user_info信息
-        console.log("没有用户角色信息，动态路由未注入过，拉取用户信息，添加动态路由后再跳转访问的路由");
+        console.log("没有用户角色信息，动态路由未注入过，重新拉取用户角色信息，根据角色信息添加动态路由后再跳转访问的路由");
         store
           .dispatch("GetInfo")
           .then(res => {
