@@ -8,5 +8,5 @@ module.exports = {
   chainWebpack: config => {
     config.resolve.alias.set("@", resolve("src"));
   },
-  publicPath: process.env.NODE_ENV === "production" ? "/my-vue-template" : "/"
+  publicPath: process.env.NODE_ENV === "production" ? "/dynamic-Router-master2" : "/"
 };
